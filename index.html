@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="hu" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomád Kalandtábor 2026</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 36, 17, 0.7), rgba(15, 36, 17, 0.9)), url('https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+        }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f5f5f4; }
+        ::-webkit-scrollbar-thumb { background: #10b981; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #059669; }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased overflow-x-hidden">
+
+    <!-- Navigáció -->
+    <nav class="fixed w-full z-50 bg-stone-900/80 backdrop-blur-md transition-all duration-300 shadow-lg border-b border-stone-700/50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-300 tracking-wider">
+                NOMÁD<span class="text-white">26</span>
+            </a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-stone-300">
+                <a href="#bemutatkozas" class="hover:text-emerald-400 transition-colors">Bemutatkozás</a>
+                <a href="#csapatok" class="hover:text-emerald-400 transition-colors">Csapatok</a>
+                <a href="#programok" class="hover:text-emerald-400 transition-colors">Programok</a>
+                <a href="#arak" class="hover:text-emerald-400 transition-colors">Árak</a>
+                <a href="#kapcsolat" class="hover:text-emerald-400 transition-colors">Kapcsolat</a>
+            </div>
+            <div class="hidden md:block">
+                <a href="#kapcsolat" class="bg-emerald-500 hover:bg-emerald-400 text-stone-900 font-bold py-2 px-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_15px_rgba(16,185,129,0.5)]">
+                    Jelentkezem
+                </a>
+            </div>
+            <div class="md:hidden text-white text-2xl cursor-pointer">☰</div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg text-white min-h-screen flex flex-col justify-center items-center text-center p-6 relative">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="mt-20">
+            <span class="inline-block py-1 px-3 rounded-full bg-emerald-500/20 text-emerald-300 font-semibold tracking-widest uppercase mb-6 border border-emerald-500/30 backdrop-blur-sm">
+                2026. Augusztus 3. hét
+            </span>
+            <h1 class="text-5xl md:text-8xl font-extrabold mb-6 drop-shadow-2xl leading-tight">
+                Ébreszd fel a <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-200">vadont!</span>
+            </h1>
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto font-light mb-12 text-stone-300">
+                Két csapat. Egy erdő. Életed legnagyobb kalandja 12 éves kortól. Szakadj ki a mindennapokból!
+            </p>
+            <a href="#bemutatkozas" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-300 bg-emerald-600 rounded-full hover:bg-emerald-500 overflow-hidden shadow-[0_0_20px_rgba(16,185,129,0.4)]">
+                <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-black"></span>
+                <span class="relative">Fedezd fel a tábort</span>
+                <svg class="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+        </div>
+        
+        <div class="absolute bottom-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.93,121.33,198.8,110.51C242.47,103.54,284.4,80.12,321.39,56.44Z" fill="#fafaf9"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Bemutatkozás -->
+    <section id="bemutatkozas" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right" class="relative">
+                <div class="absolute inset-0 bg-emerald-500 rounded-2xl transform translate-x-4 translate-y-4 opacity-20"></div>
+                <img src="https://scontent-vie1-1.xx.fbcdn.net/v/t39.30808-6/487809817_1204490605013059_4151902287827124200_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=TqsOgHhDslkQ7kNvwEdB0vF&_nc_oc=Adp7oZnxzCjS-Q42nvX2TcFBmOWscA53ggKzX26tlf0ANo2FjuJ2bPAfZVi1sl_JSMi-8tcA4fnpuOPhiqpOxmAZ&_nc_zt=23&_nc_ht=scontent-vie1-1.xx&_nc_gid=FRVg6ug_LVNT6o6iMkk4Vw&_nc_ss=7b2a8&oh=00_Af4bMVuth3w0SLubSQTYEgdwbRrITsygK1hfs94D_NlJug&oe=6A10FB3A" alt="Sátorozás az erdőben" class="rounded-2xl shadow-2xl relative z-10 w-full object-cover h-[400px]">
+            </div>
+            <div data-aos="fade-left">
+                <h2 class="text-sm font-bold tracking-widest text-emerald-600 uppercase mb-2">A Kaland Kezdete</h2>
+                <h3 class="text-4xl font-extrabold text-stone-900 mb-6">Több mint egy egyszerű nyári tábor</h3>
+                <p class="text-lg text-stone-600 leading-relaxed mb-6">
+                    A kis erdőlakók két csapatot fognak alkotni. Különböző feladatokkal és kihívásokkal kell megküzdeniük a hét alatt: ez már a sátorokban alvásnál, a tűzrakásnál, és a természetben való önmegvalósításnál kezdődik.
+                </p>
+                <p class="text-lg text-stone-600 leading-relaxed mb-8">
+                    Célunk a csapatépítés, az ismerkedés és életre szóló barátságok kötése. Fejlesztő drámajátékokkal készülünk, elszakítjuk a srácokat a képernyőktől, és visszavezetjük őket a természetbe.
+                </p>
+                <div class="grid grid-cols-2 gap-6 border-t border-stone-200 pt-8">
+                    <div>
+                        <h4 class="text-3xl font-bold text-emerald-600 mb-1">12+</h4>
+                        <p class="text-stone-500 font-medium">Éves kortól</p>
+                    </div>
+                    <div>
+                        <h4 class="text-3xl font-bold text-emerald-600 mb-1">5</h4>
+                        <p class="text-stone-500 font-medium">Nap tiszta nomád élmény</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Csapatok Section -->
+    <section id="csapatok" class="py-24 bg-stone-900 text-white relative px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-sm font-bold tracking-widest text-emerald-400 uppercase mb-2">Válassz oldalt</h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold mb-4">A Nagy Összecsapás</h3>
+                <p class="text-stone-400 text-lg max-w-2xl mx-auto">Demokratikus szavazás, saját bázis, közös induló. Melyik frakciót viszed győzelemre?</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <div data-aos="flip-left" data-aos-delay="100" class="group bg-stone-800 rounded-3xl border border-stone-700 overflow-hidden hover:border-blue-500 transition-all duration-500 hover:shadow-[0_0_30px_rgba(59,130,246,0.3)]">
+                    <div class="h-48 bg-gradient-to-br from-blue-700 to-blue-900 flex flex-col items-center justify-center relative overflow-hidden">
+                        <div class="absolute w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-30"></div>
+                        <h3 class="text-4xl font-black tracking-widest text-white relative z-10 drop-shadow-lg group-hover:scale-110 transition-transform duration-500">KORNÉL FAN</h3>
+                        <p class="text-blue-200 mt-2 relative z-10 font-medium tracking-wider uppercase">Bázis Észak</p>
+                    </div>
+                    <div class="p-10 text-center">
+                        <ul class="space-y-4 mb-8 text-stone-300 text-left">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Saját vezér választása</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Stratégiai védelem kiépítése</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Kék csapatzászló megalkotása</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div data-aos="flip-right" data-aos-delay="200" class="group bg-stone-800 rounded-3xl border border-stone-700 overflow-hidden hover:border-orange-500 transition-all duration-500 hover:shadow-[0_0_30px_rgba(249,115,22,0.3)]">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-red-600 flex flex-col items-center justify-center relative overflow-hidden">
+                        <div class="absolute w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-30"></div>
+                        <h3 class="text-4xl font-black tracking-widest text-white relative z-10 drop-shadow-lg group-hover:scale-110 transition-transform duration-500">HUBA FAN</h3>
+                        <p class="text-orange-200 mt-2 relative z-10 font-medium tracking-wider uppercase">Bázis Dél</p>
+                    </div>
+                    <div class="p-10 text-center">
+                        <ul class="space-y-4 mb-8 text-stone-300 text-left">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Taktikai támadások indítása</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Premium túlélési tippek</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-orange-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> A nyertes csapat hehe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programok -->
+    <section id="programok" class="py-24 px-6 max-w-7xl mx-auto bg-stone-50">
+        <h2 class="text-sm font-bold tracking-widest text-center text-emerald-600 uppercase mb-2" data-aos="fade-up">Kihívások hete</h2>
+        <h3 class="text-4xl md:text-5xl font-extrabold text-center text-stone-900 mb-16" data-aos="fade-up" data-aos-delay="100">Mik várnak rád?</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">🏕️</div>
+                <h4 class="text-2xl font-bold mb-3 text-stone-800">Bázisépítő verseny</h4>
+                <p class="text-stone-600 leading-relaxed">Komfort, stabilitás, biztonság és esztétika. Építsetek menedéket és hintákat a puszta kezetekkel az erdő mélyén!</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">⚔️</div>
+                <h4 class="text-2xl font-bold mb-3 text-stone-800">Csaták & Játékok</h4>
+                <p class="text-stone-600 leading-relaxed">Epikus számháborúk, Meta, ügyességi játékok (pl. kalóz járás), partizán harcok és mindennapos reggeli "vadászat".</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:-translate-y-2 transition-transform duration-300 group">
+                <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300">🎭</div>
+                <h4 class="text-2xl font-bold mb-3 text-stone-800">Drámajátékok</h4>
+                <p class="text-stone-600 leading-relaxed">Személyiségfejlesztő közösségi játékok, önmegvalósítás, tábortűz melletti történetmesélés és nevetés.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Árak Section -->
+    <section id="arak" class="py-24 bg-stone-200 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-sm font-bold tracking-widest text-emerald-600 uppercase mb-2">Befektetés egy élménybe</h2>
+                <h3 class="text-4xl font-extrabold text-stone-900">Tábori Hozzájárulás</h3>
+            </div>
+            
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row" data-aos="zoom-in">
+                <div class="md:w-3/5 p-10 md:p-12">
+                    <h4 class="text-2xl font-bold text-stone-800 mb-6">Mit tartalmaz a részvételi díj?</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-stone-600">5 napos, 4 éjszakás nomád erdei kaland</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-stone-600">Napi többszöri meleg és hideg étkezés</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-stone-600">24 órás felnőtt felügyelet és programvezetés</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-emerald-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span class="text-stone-600">A bázisépítéshez és programokhoz szükséges minden alapanyag</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-2/5 bg-emerald-600 text-white p-10 md:p-12 flex flex-col justify-center items-center text-center">
+                    <p class="text-emerald-100 font-medium uppercase tracking-wider mb-2">Teljes Heti Részvétel</p>
+                    <div class="flex items-baseline mb-6">
+                        <span class="text-5xl font-black">XX</span>
+                        <span class="text-2xl font-bold ml-2">Ft</span>
+                    </div>
+                    <p class="text-sm text-emerald-100 mb-8">Az ár minden költséget tartalmaz.</p>
+                    <a href="#kapcsolat" class="w-full bg-white text-emerald-700 font-bold py-3 px-6 rounded-full hover:bg-stone-100 transition-colors shadow-lg">
+                        Jelentkezés
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Szülőknek & Kapcsolat (MODIFIED: Kontakt Kártyák) -->
+    <section id="kapcsolat" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-16">
+            
+            <!-- Fontos Info Szülőknek -->
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-extrabold text-stone-900 mb-6">Fontos infók a szülőknek</h2>
+                <p class="text-stone-600 mb-8 leading-relaxed">Kérjük, készítsék fel a gyerekeket egy igazi nomád élményre! A következőket mindenképp hozzák magukkal a táborozók:</p>
+                
+                <div class="space-y-6">
+                    <div class="flex items-center p-4 bg-emerald-50 rounded-xl border border-emerald-100">
+                        <div class="text-3xl mr-4">🎒</div>
+                        <div>
+                            <h4 class="font-bold text-stone-800">Hálózsák</h4>
+                            <p class="text-sm text-stone-500">A sátrazáshoz elengedhetetlen.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-emerald-50 rounded-xl border border-emerald-100">
+                        <div class="text-3xl mr-4">🪲</div>
+                        <div>
+                            <h4 class="font-bold text-stone-800">Kullancs elleni védelem</h4>
+                            <p class="text-sm text-stone-500">Spray, riasztó és felkészítés.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-emerald-50 rounded-xl border border-emerald-100">
+                        <div class="text-3xl mr-4">🌧️</div>
+                        <div>
+                            <h4 class="font-bold text-stone-800">Megfelelő ruházat</h4>
+                            <p class="text-sm text-stone-500">Készüljenek fel minden időjárási viszonyra.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-emerald-50 rounded-xl border border-emerald-100">
+                        <div class="text-3xl mr-4">🪥</div>
+                        <div>
+                            <h4 class="font-bold text-stone-800">Higiéniai felszerelés</h4>
+                            <p class="text-sm text-stone-500">Személyes tisztálkodási szerek.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kapcsolat Kártyák (Backend nélkül) -->
+            <div data-aos="fade-left" class="flex flex-col justify-center">
+                <h3 class="text-3xl font-bold text-stone-900 mb-2">Jelentkezés & Kapcsolat</h3>
+                <p class="text-stone-500 mb-8">Keress minket bátran az alábbi elérhetőségeken a jelentkezéshez, vagy ha bármilyen kérdésed van!</p>
+                
+                <div class="space-y-6">
+                    <!-- Telefon Kártya -->
+                    <a href="tel:+36204557601" class="group flex items-center p-6 bg-white rounded-3xl shadow-lg border border-stone-100 hover:border-emerald-300 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300 mr-6 flex-shrink-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-emerald-600 uppercase tracking-wider mb-1">Telefon / Jelentkezés</h4>
+                            <p class="text-2xl font-extrabold text-stone-800 group-hover:text-emerald-600 transition-colors">+36 20 455 7601</p>
+                            <p class="text-2xl font-extrabold text-stone-800 group-hover:text-emerald-600 transition-colors">+36 30 936 3898</p>
+                            <p class="text-sm text-stone-500 mt-1">Hívj minket hétköznap 8:00 - 18:00 között!</p>
+                        </div>
+                    </a>
+
+                    <!-- Email Kártya -->
+                    <a href="mailto:naposholdas@gmail.com" class="group flex items-center p-6 bg-white rounded-3xl shadow-lg border border-stone-100 hover:border-emerald-300 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="w-16 h-16 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl group-hover:bg-emerald-500 group-hover:text-white transition-colors duration-300 mr-6 flex-shrink-0">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-emerald-600 uppercase tracking-wider mb-1">E-mail címünk</h4>
+                            <p class="text-xl font-extrabold text-stone-800 group-hover:text-emerald-600 transition-colors">naposholdas@gmail.com</p>
+                            <p class="text-xl font-extrabold text-stone-800 group-hover:text-emerald-600 transition-colors">laszlohuba0123@gmail.com</p>
+                            <p class="text-sm text-stone-500 mt-1">Várjuk jelentkezésed vagy kérdéseid!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-950 text-stone-500 py-10 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <span class="text-xl font-bold text-emerald-500 tracking-wider">NOMÁD<span class="text-white">26</span></span>
+                <p class="text-sm mt-1">Az erdő vár, a kaland hív.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://www.facebook.com/zsalyavolgy" class="hover:text-emerald-400 transition">Facebook</a>
+                <a href="https://www.instagram.com/nomad_.26/" class="hover:text-emerald-400 transition">Instagram</a>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-10">
+            &copy; 2026 Nomád Kalandtábor. Minden jog fenntartva.
+        </div>
+    </footer>
+
+    <!-- AOS Animation Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+    </script>
+</body>
+</html>
